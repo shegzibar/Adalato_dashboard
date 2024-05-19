@@ -1,4 +1,5 @@
 import 'package:adalato_dashboard/pages/analysis/analysis_screen.dart';
+import 'package:adalato_dashboard/pages/database%20pages/add%20home.dart';
 import 'package:adalato_dashboard/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,8 @@ class _navigationState extends State<navigation> {
 
   final List<Widget> _pages = [
     home(),
-    AnalysisScreen()
+    AnalysisScreen(),
+    add_home()
   ];
 
   void _onItemTapped(int index) {
@@ -48,6 +50,14 @@ class _navigationState extends State<navigation> {
                   iconSize: 30,
                   onPressed: () {
                     _onItemTapped(1);
+                  },
+                ),
+                SizedBox(height: 20),
+                IconButton(
+                  icon: Icon(Icons.file_copy_rounded, color: _selectedIndex == 2 ? Colors.white : Colors.white54),
+                  iconSize: 30,
+                  onPressed: () {
+                    _onItemTapped(2);
                   },
                 ),
               ],

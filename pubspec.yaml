@@ -39,6 +39,7 @@ dependencies:
   cloud_firestore:
   charts_flutter:
   syncfusion_flutter_charts:
+  uuid:
 
 
 dev_dependencies:
